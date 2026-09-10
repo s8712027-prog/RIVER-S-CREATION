@@ -1,0 +1,193 @@
+{
+  "schema": "ANN-frozen-external-validation-20260828-v1",
+  "decision": "Fail",
+  "split_policy": "first two acquisition-ordered new sources form candidates; third source remains isolated heldout",
+  "read_budget_per_source": 64,
+  "active_policy": "categorical-local-capability-vector",
+  "frozen_learning_representation": "ordered triples of global PCM directional-count topologies with exact motif evidence attached",
+  "formation_archives": [
+    "ann_external_231157_neutral_archive_v0_1.npz",
+    "ann_external_231316_neutral_archive_v0_1.npz"
+  ],
+  "heldout_archives": [
+    "ann_external_231543_neutral_archive_v0_1.npz"
+  ],
+  "formation": {
+    "source_count": 2,
+    "shared_reads": 128,
+    "maximum_start_window_sum": 138,
+    "unread_coordinates_before_maximum_sum": 12,
+    "adjacent_pair_count_sum": 114,
+    "adjacent_triple_count_sum": 103,
+    "distinct_audio_temporal_structures": 97,
+    "cross_source_audio_temporal_structures": 0,
+    "distinct_visual_temporal_structures": 40,
+    "cross_source_visual_temporal_structures": 0,
+    "per_source": [
+      {
+        "archive": "ann_external_231157_neutral_archive_v0_1.npz",
+        "source_sha256": "104c69f59b52e4ab872823c723c10a2e95bafc9cefddab8d84af22406c472a1e",
+        "usable_duration_s": 13.366633333333334,
+        "shared_read_count": 64,
+        "maximum_start_window": 68,
+        "unread_coordinates_before_maximum": 5,
+        "adjacent_pair_count": 58,
+        "adjacent_triple_count": 54,
+        "audio_distinct_exact_motifs": 64,
+        "visual_distinct_exact_motifs": 64,
+        "decision_offsets": {
+          "1": 59,
+          "2": 5
+        },
+        "decision_drivers": {
+          "audio": 14,
+          "audio+visual": 5,
+          "none": 38,
+          "visual": 7
+        }
+      },
+      {
+        "archive": "ann_external_231316_neutral_archive_v0_1.npz",
+        "source_sha256": "5175d466240f84cca290163152b5b1392cfd6dfa31a8b3dce778a86a430f5d4b",
+        "usable_duration_s": 13.833300000000001,
+        "shared_read_count": 64,
+        "maximum_start_window": 70,
+        "unread_coordinates_before_maximum": 7,
+        "adjacent_pair_count": 56,
+        "adjacent_triple_count": 49,
+        "audio_distinct_exact_motifs": 64,
+        "visual_distinct_exact_motifs": 64,
+        "decision_offsets": {
+          "1": 57,
+          "2": 7
+        },
+        "decision_drivers": {
+          "audio": 11,
+          "audio+visual": 7,
+          "none": 42,
+          "visual": 4
+        }
+      }
+    ]
+  },
+  "heldout": {
+    "source_count": 1,
+    "shared_reads": 64,
+    "maximum_start_window_sum": 67,
+    "unread_coordinates_before_maximum_sum": 4,
+    "adjacent_pair_count_sum": 59,
+    "adjacent_triple_count_sum": 55,
+    "distinct_audio_temporal_structures": 55,
+    "cross_source_audio_temporal_structures": 0,
+    "distinct_visual_temporal_structures": 18,
+    "cross_source_visual_temporal_structures": 0,
+    "per_source": [
+      {
+        "archive": "ann_external_231543_neutral_archive_v0_1.npz",
+        "source_sha256": "2cd8a6c93252a457597ef640edaf5d9defb08642a98f7c64626a0bb8c57f1817",
+        "usable_duration_s": 15.5333,
+        "shared_read_count": 64,
+        "maximum_start_window": 67,
+        "unread_coordinates_before_maximum": 4,
+        "adjacent_pair_count": 59,
+        "adjacent_triple_count": 55,
+        "audio_distinct_exact_motifs": 64,
+        "visual_distinct_exact_motifs": 64,
+        "decision_offsets": {
+          "1": 60,
+          "2": 4
+        },
+        "decision_drivers": {
+          "audio": 9,
+          "audio+visual": 4,
+          "none": 25,
+          "visual": 26
+        }
+      }
+    ]
+  },
+  "audio": {
+    "formation_candidate_count": 97,
+    "heldout_observed_structure_count": 55,
+    "heldout_supported_candidate_count": 2,
+    "heldout_supports_distinct_exact_evidence": 2,
+    "reversed_order_control_match_count": 1,
+    "adjacency_broken_null_trial_count": 31,
+    "adjacency_broken_null_match_mean": 0.7419354838709677,
+    "adjacency_broken_null_match_max": 3,
+    "empirical_null_p_upper": 0.1875,
+    "heldout_exceeds_every_adjacency_broken_control": false,
+    "representation_control_passed": false,
+    "matched_structures": [
+      {
+        "structure_token": "a6e7fd464fda1467d23ab1704b4da7cbd3c126ca2b8521eff46dda98513a69f1",
+        "formation_sources": [
+          "ann_external_231316_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_external_231543_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "35ea722bbeab92b10a1320d029898685f7ad67d125afb3d6fb28e3f279783ef1",
+          "f3ed792a7f9647474cb6a41c7e0cf406706f42edf0875f08a395edf5edad7577",
+          "8c87a5cd517a4d2baad32ac37557b0260d4fc2ed8f6ff47c9f9bf34e138d1a69"
+        ]
+      },
+      {
+        "structure_token": "ef53256a778f3368ddf59d9911bff6f5d485ebfd41943abf49f4a8d004c34d11",
+        "formation_sources": [
+          "ann_external_231316_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_external_231543_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "f7663a2f4dcab425c7214f06155b6a398ca29a504e967bc45854f93dc67e4862",
+          "62042c68b51771a5608085848252601a8570e431acf1cf594e40a476a19820db",
+          "8c87a5cd517a4d2baad32ac37557b0260d4fc2ed8f6ff47c9f9bf34e138d1a69"
+        ]
+      }
+    ]
+  },
+  "visual": {
+    "formation_candidate_count": 40,
+    "heldout_observed_structure_count": 18,
+    "heldout_supported_candidate_count": 0,
+    "heldout_supports_distinct_exact_evidence": 0,
+    "reversed_order_control_match_count": 0,
+    "adjacency_broken_null_trial_count": 19,
+    "adjacency_broken_null_match_mean": 0.0,
+    "adjacency_broken_null_match_max": 0,
+    "empirical_null_p_upper": 1.0,
+    "heldout_exceeds_every_adjacency_broken_control": false,
+    "representation_control_passed": false,
+    "matched_structures": []
+  },
+  "decision_checks": {
+    "audio_exceeds_reversed_and_every_adjacency_broken_control": false,
+    "visual_exceeds_reversed_and_every_adjacency_broken_control": false,
+    "all_audio_matches_have_distinct_exact_evidence": true,
+    "all_visual_matches_have_distinct_exact_evidence": true,
+    "both_modalities_have_eligible_adjacency_broken_trials": true
+  },
+  "historical_controls_not_reloaded": {
+    "audio": {
+      "heldout": 20,
+      "reversed": 15,
+      "adjacency_broken_max": 18
+    },
+    "visual": {
+      "heldout": 3,
+      "reversed": 2,
+      "adjacency_broken_max": 2
+    }
+  },
+  "frontier_tradeoff_boundary": "structure formation and frontier reach are reported for the frozen local policy; no fixed-policy arm was rerun on either old or new sources",
+  "old_eleven_sources_read": false,
+  "video_decode_repeated": false,
+  "post_outcome_tuning_performed": false,
+  "stop_after_result": true
+}
+
