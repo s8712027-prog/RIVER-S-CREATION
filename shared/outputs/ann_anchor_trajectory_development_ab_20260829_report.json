@@ -1,0 +1,385 @@
+{
+  "schema": "ANN-anchor-trajectory-development-ab-v1",
+  "development_only": true,
+  "candidate": "link each fixed anchor's three ordered directional relations before pooling; match the complete source-neutral eight-trajectory histogram",
+  "candidate_freeze": "A_ANN_ANCHOR_TRAJECTORY_CANDIDATE_FREEZE_20260829.md",
+  "read_budget_per_source": 64,
+  "shared_reads": {
+    "formation": 64,
+    "heldout": 64
+  },
+  "source_sha256": {
+    "formation": "c7be5b4e7cc7caf74b6ba576b8804219d3b53b96cb96417e0d50117a526aeaf2",
+    "heldout": "a1e9518e6480eba916cbc50b587a57d2ee6583f0de9929cfb48cbeeac0472ae3"
+  },
+  "active_reader_sha256": "74AAA1AF2AACAD0FF8B13DF5DD9D472CBE91F95D07C87F9F773352FF0DD81ACA",
+  "baseline_audio_supported_candidate_count": 0,
+  "formation_base_coordinate_count": 62,
+  "heldout_base_coordinate_count": 58,
+  "formation_occurrence_count": 60,
+  "heldout_occurrence_count": 51,
+  "formation_candidate_count": 60,
+  "heldout_observed_structure_count": 51,
+  "heldout_supported_candidate_count": 0,
+  "heldout_supports_distinct_exact_evidence": 0,
+  "representation_reverse_control": {
+    "scope": "same-base-coordinate reversal of each three-relation trajectory with the unchanged admission applied after transformation; not raw-waveform reversal",
+    "attempted_occurrence_count": 58,
+    "admitted_occurrence_count": 51,
+    "observed_structure_count": 51,
+    "match_count": 0
+  },
+  "other_time_order_controls": {
+    "0-2-1": {
+      "attempted_occurrence_count": 58,
+      "admitted_occurrence_count": 56,
+      "observed_structure_count": 56,
+      "match_count": 0
+    },
+    "1-0-2": {
+      "attempted_occurrence_count": 58,
+      "admitted_occurrence_count": 56,
+      "observed_structure_count": 56,
+      "match_count": 0
+    },
+    "1-2-0": {
+      "attempted_occurrence_count": 58,
+      "admitted_occurrence_count": 56,
+      "observed_structure_count": 56,
+      "match_count": 0
+    },
+    "2-0-1": {
+      "attempted_occurrence_count": 58,
+      "admitted_occurrence_count": 56,
+      "observed_structure_count": 56,
+      "match_count": 0
+    }
+  },
+  "anchor_link_broken_control": {
+    "policy": "cyclically permute later states within channel; every fixed pair breaks both adjacent same-anchor links",
+    "trial_count": 9,
+    "trials": {
+      "state1+1_state2+0_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+1_state2+2_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+1_state2+3_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+2_state2+0_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+2_state2+1_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+2_state2+3_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+3_state2+0_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+3_state2+1_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      },
+      "state1+3_state2+2_within_channel": {
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 51,
+        "observed_structure_count": 51,
+        "match_count": 0
+      }
+    },
+    "maximum_match_count": 0
+  },
+  "time_adjacency_broken_control": {
+    "policy": "cyclic bijections preserve all three positional marginals and heldout occurrence capacity; every retained shift breaks forward and reverse adjacency",
+    "trials": [
+      {
+        "shift": 1,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 2,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      },
+      {
+        "shift": 3,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 57,
+        "observed_structure_count": 57,
+        "match_count": 0
+      },
+      {
+        "shift": 4,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 5,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 6,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 55,
+        "observed_structure_count": 55,
+        "match_count": 0
+      },
+      {
+        "shift": 7,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 8,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 9,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 10,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 11,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 55,
+        "observed_structure_count": 55,
+        "match_count": 0
+      },
+      {
+        "shift": 12,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      },
+      {
+        "shift": 13,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 14,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 15,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      },
+      {
+        "shift": 16,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 55,
+        "observed_structure_count": 55,
+        "match_count": 0
+      },
+      {
+        "shift": 17,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 52,
+        "observed_structure_count": 52,
+        "match_count": 0
+      },
+      {
+        "shift": 18,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 19,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 53,
+        "observed_structure_count": 53,
+        "match_count": 0
+      },
+      {
+        "shift": 20,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 21,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      },
+      {
+        "shift": 22,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 55,
+        "observed_structure_count": 55,
+        "match_count": 0
+      },
+      {
+        "shift": 23,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      },
+      {
+        "shift": 24,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 57,
+        "observed_structure_count": 57,
+        "match_count": 0
+      },
+      {
+        "shift": 25,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 57,
+        "observed_structure_count": 57,
+        "match_count": 0
+      },
+      {
+        "shift": 26,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 55,
+        "observed_structure_count": 55,
+        "match_count": 0
+      },
+      {
+        "shift": 27,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 52,
+        "observed_structure_count": 52,
+        "match_count": 0
+      },
+      {
+        "shift": 28,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 5,
+        "observed_structure_count": 5,
+        "match_count": 0
+      },
+      {
+        "shift": 30,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 54,
+        "observed_structure_count": 54,
+        "match_count": 0
+      },
+      {
+        "shift": 31,
+        "attempted_occurrence_count": 58,
+        "admitted_occurrence_count": 56,
+        "observed_structure_count": 56,
+        "match_count": 0
+      }
+    ],
+    "trial_count": 30,
+    "maximum_match_count": 0
+  },
+  "maximum_control_match_count": 0,
+  "control_fairness_errors": [],
+  "anchor_geometry_audit": {
+    "formation": {
+      "samples_per_window": 1600,
+      "channel_count": 2,
+      "raw_reverse_anchor_mapping": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw_reverse_closed": false
+    },
+    "heldout": {
+      "samples_per_window": 1600,
+      "channel_count": 2,
+      "raw_reverse_anchor_mapping": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "raw_reverse_closed": false
+    }
+  },
+  "formation_append_only_revision_count": 60,
+  "matched_structures": [],
+  "decision_checks": {
+    "at_least_one_forward_structure_supported": false,
+    "forward_strictly_exceeds_every_frozen_control": false,
+    "all_forward_matches_have_distinct_exact_evidence": true,
+    "forward_support_exceeds_exact_count_baseline": false
+  },
+  "decision": "reject-development-candidate",
+  "external_generalization_claimed": false,
+  "raw_waveform_reverse_claimed": false,
+  "active_reader_modified": false,
+  "original_mp4_redecoded": false,
+  "old_or_external_validation_source_read": false
+}
+
