@@ -1,0 +1,49 @@
+{
+  "schema": "ANN-local-ordinal-moment-development-attempt-v1",
+  "status": "started-before-first-source-audio-open",
+  "manifest": "A_ANN_LOCAL_ORDINAL_MOMENT_DEVELOPMENT_ROLE_MANIFEST_V3_20260829.md",
+  "manifest_sha256": "151C20F0BE6D8BFE51EE68E417F446EF7CB2C6A2A1EBB4A7039853E3DB6C55FF",
+  "charter_sha256": "58C94D46732C5A2751A6B6797EAC17C446EE18AF3DC7BE9041D3F911F3B6F095",
+  "module_sha256": "F08C1CB633941F5C3640638464CD4C7BD352E1D42382E4845C6A3746E38A9857",
+  "tests_sha256": "0EFB05A7CB50E7498477A4993C7AFA1353FFB1319689E9DFFCFD5F46A6A5E580",
+  "runner_tests_sha256": "B4CC15F174B9FC3C883C5426D00EC46D22B02282B6707ADD6D4255D53766DF79",
+  "runner_sha256": "B52585DB06ABB54ABBE2A7D705602D92B4C2BD4C755771D9D48037ED5AE5FA08",
+  "pyav_version": "15.1.0",
+  "target_sample_rate": 16000,
+  "samples_per_window": 1600,
+  "window_count": 64,
+  "source_roles": [
+    {
+      "role": "F1",
+      "group": "formation",
+      "source_sha256": "C6C32232576DCB704A26BF9397C75452F328606EE8CD407C3D65AABBFB49FD56"
+    },
+    {
+      "role": "F2",
+      "group": "formation",
+      "source_sha256": "496FFB1096DE1B334A7331AC0359452FF14D495191ACC8501A3A2FE935FA0A4B"
+    },
+    {
+      "role": "F3",
+      "group": "formation",
+      "source_sha256": "71E8D51B9DFB4E43D6DA6DC596C3682E8D254162A7CB1B7D69B57246EFB1B347"
+    },
+    {
+      "role": "H1",
+      "group": "heldout",
+      "source_sha256": "AC237E217F7167FF1C48E051CEE66253FD1D2A55E2C53804159BB5D2AC487121"
+    },
+    {
+      "role": "H2",
+      "group": "heldout",
+      "source_sha256": "B3ECBE95229F965A679AD73924F267B5419DA1348494ECDB14CBD1674532299B"
+    },
+    {
+      "role": "H3",
+      "group": "heldout",
+      "source_sha256": "EBAA321AB60114661461B15D6DD273D0E485E4D2FDAA5A5085E0C8129CB226EF"
+    }
+  ],
+  "external_sources_supplied": false
+}
+
