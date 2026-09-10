@@ -1,0 +1,104 @@
+{
+  "schema": "ANN-directional-count-prediction-development-v1",
+  "development_only": true,
+  "candidate": "two ordered relative-count changes form a context that predicts the third; reverse learning has equal capacity and inverts order plus up/down direction",
+  "read_budget_per_source": 64,
+  "shared_reads": {
+    "formation": 64,
+    "heldout": 64
+  },
+  "example_counts": {
+    "formation": 61,
+    "heldout": 55
+  },
+  "source_sha256": {
+    "formation": "c7be5b4e7cc7caf74b6ba576b8804219d3b53b96cb96417e0d50117a526aeaf2",
+    "heldout": "a1e9518e6480eba916cbc50b587a57d2ee6583f0de9929cfb48cbeeac0472ae3"
+  },
+  "forward_prediction": {
+    "formation_context_count": 41,
+    "formation_deterministic_context_count": 29,
+    "formation_ambiguous_context_count": 12,
+    "heldout_correct_deterministic_prediction_count": 2,
+    "heldout_incorrect_deterministic_prediction_count": 12,
+    "correct_predictions_with_distinct_exact_evidence": 2,
+    "correct_predictions": [
+      {
+        "edge_token": "04f99b402b2838d26048de56f605f3af63e0ed01233b447a7c64df19d295253c",
+        "context_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,down,up",
+          "pcm-directional-count-delta-v1.41:same,down,up,down"
+        ],
+        "target_token": "pcm-directional-count-delta-v1.41:same,up,down,up",
+        "distinct_exact_evidence_across_split": true
+      },
+      {
+        "edge_token": "930245c904e483c2b60e52fb8e0a94d1918b4566fab86d75418c4498ef2c0284",
+        "context_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,same,down",
+          "pcm-directional-count-delta-v1.41:same,down,down,up"
+        ],
+        "target_token": "pcm-directional-count-delta-v1.41:same,same,up,down",
+        "distinct_exact_evidence_across_split": true
+      }
+    ]
+  },
+  "reverse_equal_capacity_prediction": {
+    "formation_context_count": 41,
+    "formation_deterministic_context_count": 29,
+    "formation_ambiguous_context_count": 12,
+    "heldout_correct_deterministic_prediction_count": 3,
+    "heldout_incorrect_deterministic_prediction_count": 13,
+    "correct_predictions_with_distinct_exact_evidence": 3,
+    "correct_predictions": [
+      {
+        "edge_token": "04f99b402b2838d26048de56f605f3af63e0ed01233b447a7c64df19d295253c",
+        "context_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,down,up",
+          "pcm-directional-count-delta-v1.41:same,down,up,down"
+        ],
+        "target_token": "pcm-directional-count-delta-v1.41:same,up,down,up",
+        "distinct_exact_evidence_across_split": true
+      },
+      {
+        "edge_token": "0eacebaa0ff88c389bb571a4776a01605b994925372fd054281a9df666f48e0d",
+        "context_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,down,up",
+          "pcm-directional-count-delta-v1.41:same,up,down,down"
+        ],
+        "target_token": "pcm-directional-count-delta-v1.41:same,down,up,up",
+        "distinct_exact_evidence_across_split": true
+      },
+      {
+        "edge_token": "a86e50ea1d9cb0e51765de0ca1513acff951aaf5c441532e1cda13d6512bf8d9",
+        "context_tokens": [
+          "pcm-directional-count-delta-v1.41:same,same,down,up",
+          "pcm-directional-count-delta-v1.41:same,up,up,down"
+        ],
+        "target_token": "pcm-directional-count-delta-v1.41:same,down,same,up",
+        "distinct_exact_evidence_across_split": true
+      }
+    ]
+  },
+  "formation_context_ambiguity_audit": {
+    "distinct_context_count": 41,
+    "contexts_with_multiple_successors": 12,
+    "maximum_successors_for_one_context": 3
+  },
+  "adjacency_broken_null_trial_count": 31,
+  "adjacency_broken_null_match_mean": 0.7741935483870968,
+  "adjacency_broken_null_match_max": 3,
+  "empirical_null_p_upper": 0.28125,
+  "formation_append_only_revision_count": 61,
+  "decision_checks": {
+    "forward_exceeds_equal_capacity_reverse_and_every_adjacency_broken_control": false,
+    "all_forward_matches_have_distinct_exact_evidence": true,
+    "at_least_one_forward_prediction_supported": true
+  },
+  "decision": "reject-development-prediction-candidate",
+  "external_generalization_claimed": false,
+  "active_reader_modified": false,
+  "original_mp4_redecoded": false,
+  "old_or_external_validation_source_read": false
+}
+
