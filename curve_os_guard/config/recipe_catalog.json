@@ -1,0 +1,24 @@
+{
+  "config_version": "0.1-demo",
+  "approval_status": "UNAPPROVED_DEMO",
+  "approval_record": null,
+  "effective_from": null,
+  "segmentation_method": "equal_thirds_demo",
+  "recipe_family": "CAL_GENERIC_DEMO",
+  "soaking_setpoint_c": 750,
+  "plausible_temp_c": [300, 950],
+  "max_sampling_jitter_ratio": 0.15,
+  "max_point_noise_c": 5.0,
+  "data_quality_gate": 0.85,
+  "data_quality_weights": {"completeness": 0.30, "sampling_regularity": 0.25, "sensor_plausibility": 0.25, "noise_stability": 0.20},
+  "process_quality_gate": 0.85,
+  "process_quality_weights": {"heating_rate_c_per_min": 0.15, "soaking_mean_error_c": 0.25, "soaking_stability_c": 0.30, "soaking_duration_min": 0.15, "cooling_rate_c_per_min": 0.10, "residual_energy_c": 0.05},
+  "acceptance_limits": {
+    "heating_rate_c_per_min": {"min": 1.0, "max": 8.0, "tolerance": 3.0},
+    "soaking_mean_error_c": {"min": -10.0, "max": 10.0, "tolerance": 15.0},
+    "soaking_stability_c": {"min": null, "max": 8.0, "tolerance": 8.0},
+    "soaking_duration_min": {"min": 12.0, "max": 40.0, "tolerance": 10.0},
+    "cooling_rate_c_per_min": {"min": -8.0, "max": -1.0, "tolerance": 3.0},
+    "residual_energy_c": {"min": null, "max": 5.0, "tolerance": 5.0}
+  }
+}
