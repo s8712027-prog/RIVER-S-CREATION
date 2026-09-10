@@ -1,0 +1,188 @@
+{
+  "schema": "ANN-directional-count-delta-development-ab-v1",
+  "development_only": true,
+  "frozen_candidate_change": "replace the absolute count triple with two signed count-change topologies; true reversal inverts both order and up/down direction",
+  "read_budget_per_source": 64,
+  "shared_reads": {
+    "formation": 64,
+    "heldout": 64
+  },
+  "baseline_audio": {
+    "formation_candidate_count": 60,
+    "heldout_observed_structure_count": 51,
+    "heldout_supported_candidate_count": 0,
+    "heldout_supports_distinct_exact_evidence": 0,
+    "reversed_order_control_match_count": 2,
+    "adjacency_broken_null_trial_count": 31,
+    "adjacency_broken_null_match_mean": 0.5161290322580645,
+    "adjacency_broken_null_match_max": 3,
+    "empirical_null_p_upper": 1.0,
+    "heldout_exceeds_every_adjacency_broken_control": false,
+    "representation_control_passed": false,
+    "matched_structures": []
+  },
+  "count_delta_candidate_audio": {
+    "formation_candidate_count": 31,
+    "heldout_observed_structure_count": 36,
+    "heldout_supported_candidate_count": 10,
+    "heldout_supports_distinct_exact_evidence": 10,
+    "true_reversed_order_control_match_count": 12,
+    "adjacency_broken_null_trial_count": 31,
+    "adjacency_broken_null_match_mean": 4.903225806451613,
+    "adjacency_broken_null_match_max": 11,
+    "empirical_null_p_upper": 0.0625,
+    "representation_control_passed": false,
+    "matched_structures": [
+      {
+        "structure_token": "220c5c8694e1f31996405c5b2ad999d7ecae79d18660d3c51c60d0706b9e578b",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,up,down",
+          "pcm-directional-count-delta-v1.41:same,same,down,up"
+        ]
+      },
+      {
+        "structure_token": "49affa0aef0eaf3ba82b3db30e0c601cd3b2986d37a4d55f37ef84d1d6e1a59f",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,up,up",
+          "pcm-directional-count-delta-v1.41:same,up,up,down"
+        ]
+      },
+      {
+        "structure_token": "59aa88c76e44448d85424c97aed47799c124d0d1b00aeab315e0dd49e1305e36",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,same,down",
+          "pcm-directional-count-delta-v1.41:same,down,down,up"
+        ]
+      },
+      {
+        "structure_token": "8152185d3cdda32c2d0131a595e44ef134224a8039d7f3dbe99d97818de39db4",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,up,down",
+          "pcm-directional-count-delta-v1.41:same,same,down,up"
+        ]
+      },
+      {
+        "structure_token": "9148573bd839be287d949818f7d997f57b38f7e10f5bb1b35fbf09fc9de7f3c9",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,up,down,up",
+          "pcm-directional-count-delta-v1.41:same,up,up,down"
+        ]
+      },
+      {
+        "structure_token": "98bab7179854e71cd2b5e48a49449c2986482c1f14e0f46df23d0d8afd80d73a",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,up,same",
+          "pcm-directional-count-delta-v1.41:same,same,same,same"
+        ]
+      },
+      {
+        "structure_token": "a5cc42f5c7a4c1fc4affb0907de40d17138dd9dedc331c855ea687703b4b2a54",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,up,up",
+          "pcm-directional-count-delta-v1.41:same,up,down,up"
+        ]
+      },
+      {
+        "structure_token": "b83d124168e45102b3c29ed139de1b23332713963378c6708547a00a5dd4c806",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,same,down,up",
+          "pcm-directional-count-delta-v1.41:same,down,up,down"
+        ]
+      },
+      {
+        "structure_token": "ea2a5b31cb753741efb6b36fc67388230ac6dff801feca069ec45246f5d0ee25",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,down,up",
+          "pcm-directional-count-delta-v1.41:same,same,up,down"
+        ]
+      },
+      {
+        "structure_token": "fedbc51459a906c458ba8b835caa3256f841e75e580fb427300b186ef3a3d0cc",
+        "formation_sources": [
+          "ann_development_233248_neutral_archive_v0_1.npz"
+        ],
+        "heldout_sources": [
+          "ann_development_233446_neutral_archive_v0_1.npz"
+        ],
+        "distinct_exact_evidence_across_split": true,
+        "ordered_relation_tokens": [
+          "pcm-directional-count-delta-v1.41:same,down,down,up",
+          "pcm-directional-count-delta-v1.41:same,up,same,down"
+        ]
+      }
+    ]
+  },
+  "decision_checks": {
+    "candidate_clears_true_reverse_and_every_adjacency_broken_control": false,
+    "all_matches_retain_distinct_exact_evidence": true,
+    "supported_candidate_count_exceeds_baseline": true
+  },
+  "decision": "reject-development-candidate",
+  "external_generalization_claimed": false,
+  "original_mp4_redecoded": false,
+  "old_or_external_validation_source_read": false
+}
+
